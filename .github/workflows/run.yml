@@ -9,6 +9,8 @@ jobs:
   run-action:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      actions: write
     steps:
     - uses: actions/checkout@v4
     - name: Setup Node.js
